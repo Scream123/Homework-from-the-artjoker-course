@@ -32,10 +32,10 @@ function sortDecrease($array)
     }
 }
 
-echo 'Сортировка по возрастанию: ';
+echo 'Sort Ascending: ';
 $array = [8, 0, 2, 9, 4, 7, 6, 3, 1, 5];
 sortIncrease($array);
 echo '<hr/>';
-echo 'Сортировка по убыванию :';
+echo 'Sort descending: ';
 sortDecrease($array);
 
