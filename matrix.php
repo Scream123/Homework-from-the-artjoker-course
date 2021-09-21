@@ -80,7 +80,6 @@ $matrix2 = [
 
 additionMatrix($matrix1, $matrix2);
 
-
 // Removing elements if there is zero and the sum of elements is positive
 function isDrop($array)
 {
@@ -109,7 +108,6 @@ function isDrop($array)
             }
         }
     }
-
 
     echo "Result 2: <br>";
     for ($i = 0; $i < 3; $i++) {
