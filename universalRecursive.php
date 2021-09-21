@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: Владимир
- * Date: 31.07.2021
- * Time: 14:50
+ * Date: 11.09.2021
+ * Time: 18:00
  */
 /**
  *
@@ -11,11 +11,8 @@
  * Все задачи на циклы которые можно реализовать с помощью рекурсии, переписать с помощью рекурсивных функций
  * Написать рекурсивную функцию которая будет обходить и выводить все значения любого массива и любого уровня вложенности
  */
-
-
 function translate()
 {
-
     $search = [
         'singular' => 'Manual',
         'plural' => 'Manuals',
@@ -53,35 +50,20 @@ function translate()
     ];
     echo trans('steps.image.type.left', $search);
 }
-
 translate();
 function trans($findKey, $array)
 {
-
-    //проверка на массив
+    //check for an array
     if (is_array($array)) {
 
-        //разбиваем масссив на точки
+        //split the array into points
         $key_parts = explode('.', $findKey);
-        //извлекаем первый элемент массива
+        //fetch the first element of the array
         $key = array_shift($key_parts);
 
-        //возврат функции и разбиваем снова на точки
+        //return the function and break it down again into dots
         return trans(implode('.', $key_parts), $array[$key]);
     }
-    //возвращаем строку
+    //return string
     return $array;
-
-}
-function bulbSort(&$arr, $compare)
-{
-    for ($i = 0, $count = count($arr); $i < $count; $i++) {
-        for ($j = $i + 1; $j < $count; $j++) {
-            if ($compare($arr[$i], $arr[$j])) {
-                $temp = $arr[$i];
-                $arr[$i] = $arr[$j];
-                $arr[$j] = $temp;
-            }
-        }
-    }
 }
