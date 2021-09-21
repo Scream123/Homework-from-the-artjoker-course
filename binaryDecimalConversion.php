@@ -4,14 +4,12 @@
 системы счисления и преобразовывает в двоичную. Написать функцию которая
 выполняет преобразование наоборот.
 */
-
 /**
  * @param $binaryNumber
  * @return false|float|int|string
  */
 function binaryConversion($number)
 {
-
     $binaryNumber = '';
     if (isset($number)) {
         while ($number != 0) {
@@ -20,12 +18,9 @@ function binaryConversion($number)
         }
     } else {
         echo 'variable is not declared';
-
     }
     return $binaryNumber;
-
 }
-
 echo 'binary number = ' . binaryConversion(20) . '<br/>';
 
 function decimalConversion($binaryNumber)
@@ -42,5 +37,4 @@ function decimalConversion($binaryNumber)
     }
     return $i;
 }
-
 echo 'decimal number = ' . decimalConversion(101010) . '<br/>';
