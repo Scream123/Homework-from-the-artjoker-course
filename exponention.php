@@ -10,6 +10,5 @@ function exponention($number, $degree)
     }
     return "Число $number в {$degree}-ой степени: " . (int)$exponent;
 }
-
 echo exponention(2, 5);
 echo "<br/>";
