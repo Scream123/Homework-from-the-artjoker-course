@@ -28,7 +28,7 @@ function rangepad($low, $high)
 {
     $range = range($low, $high);
     for ($i = 0; $i < count($range); $i++) {
-        $range[$i] = str_pad( $range[$i], high, '0', STR_PAD_LEFT );
+        $range[$i] = str_pad( $range[$i], $high, '0', STR_PAD_LEFT );
     }
     return $range;
 }
