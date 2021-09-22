@@ -11,7 +11,7 @@ function parseIP($ip)
     $ip_array = ["192.168.123.34", "192.168.13.45", "192.168.13.15", "192.168.76.18", "192.168.132.48",];
     $minIp = min($ip_array);
     $maxIp = max($ip_array);
-    if (in_array($ip, $ip_array)) {
+    if (in_array($ip, $ip_array) && ($minIp <= $ip) && ($ip <= $maxIp)) {
         echo "айпи адрес $ip входит в диапазон: " . $minIp . '-' . $maxIp;
     } else {
         echo "айпи адрес $ip не входит в диапазон: " . $minIp . '-' . $maxIp;
