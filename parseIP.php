@@ -39,11 +39,6 @@ $from = mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
 $to=  mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255).".".mt_rand(0,255);
 rangepad($from, $to);
 
-
-//next option
-function inIPInterval($ip, $minIp, $maxIp){}
-$cur_ip_adrr = $_SERVER['REMOTE_ADDR'];
-
 //next opttion
 function rangeIP($ip)
 {
