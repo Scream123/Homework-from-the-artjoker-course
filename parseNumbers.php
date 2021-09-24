@@ -8,7 +8,6 @@ function parseNumbers($array)
     $zeroCount = 0;
     $posCount = 0;
     $negativeCount = 0;
-    $negativeCount = 0;
     $simple = 0;
     foreach ($array as $item) {
         if ($item === 0) {
