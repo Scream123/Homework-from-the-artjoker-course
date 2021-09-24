@@ -26,10 +26,10 @@ function parseNumbers($array)
     echo "Отрицательное число: " . $negativeCount;
     echo "Простое  число: " . $simple;
     echo "Поцентное соотношение  из массива:";
-    echo "Нулевое  число: " . $zeroCount = $zeroCount / count($array);
-    echo "Положительное число: " . $posCount = $posCount / count($array);
-    echo "Отрицательное число: " . $negativeCount = $negativeCount / count($array);
-    echo "Простое  число: " . $simple = $simple / count($array);
+    echo "Нулевое  число: " . $zeroCount = $zeroCount / count($array)*100;
+    echo "Положительное число: " . $posCount = $posCount / count($array)*100;
+    echo "Отрицательное число: " . $negativeCount = $negativeCount / count($array)*100;
+    echo "Простое  число: " . $simple = $simple / count($array)*100;
 }
 
 function isPrime($num)
